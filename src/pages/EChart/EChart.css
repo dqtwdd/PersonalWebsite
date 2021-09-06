@@ -1,0 +1,17 @@
+.echart-container {
+  position: relative;
+}
+#main {
+  width: 1500px;
+  height: 500px;
+}
+/* .front {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: aqua;
+  opacity: 0.5;
+  pointer-events: none;
+} */
