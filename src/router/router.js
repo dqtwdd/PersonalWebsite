@@ -1,6 +1,7 @@
 // router/config.js
 import XOGame from '@/pages/XOGame/XOGame';
 import Counter from '@/pages/Counter/Counter';
+import TSCounter from '@/pages/TSCounter/Counter';
 import RanderNum from '@/pages/RanderNum/RanderNum';
 import EChart from '@/pages/EChart/EChart';
 import RouterParamTest from '@/pages/RouterParamTest/RouterParamTest';
@@ -42,10 +43,23 @@ const routerList = {
     component: Counter,
     backUrl: '/RouterParamTest',
   },
+  TSCounter: {
+    name: '计数器',
+    path: '/TSCounter',
+    auth: 'admin',
+    component: TSCounter,
+    backUrl: '/RouterParamTest',
+  },
 };
 
 export const normalUserRouter = [routerList.RouterParamTest, routerList.Echarts];
-export const adminRouter = [routerList.Counter, routerList.XOGame, routerList.Randernum, routerList.Echarts];
+export const adminRouter = [
+  routerList.Counter,
+  routerList.XOGame,
+  routerList.Randernum,
+  routerList.Echarts,
+  routerList.TSCounter,
+];
 export const homeRouter = {
   name: '主页',
   path: '/',

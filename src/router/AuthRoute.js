@@ -22,7 +22,6 @@ function AuthRoute(props) {
       auth: localStorage.getItem('auth'),
     };
     props.dispatch(login(tempVal));
-    console.log('layout otherProps', <Route {...otherProps} />);
 
     return <Route {...otherProps} />;
   } else {

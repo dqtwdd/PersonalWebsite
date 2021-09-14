@@ -5,11 +5,8 @@ import './EChart.css';
 import { Input } from 'antd';
 
 function Game(props) {
-  // console.log('waterMarkkkkkkkkkkkkkkkkk', waterMark);
-
   const [waterMarkTxt, setWaterMarkTxt] = useState('');
   let waterMarkLiving = new waterMark();
-  console.log('waterrrrrrrrrrrrrrrr', waterMarkLiving.render);
 
   useEffect(() => {
     var myChart = echarts.init(document.getElementById('main'));
@@ -43,7 +40,6 @@ function Game(props) {
     alert('you clicked the button!!!!!!!!!');
   }
   function handleChange(e) {
-    console.log('eeeeeeeeeeeeee', e);
     setWaterMarkTxt(e.target.value);
     waterMarkLiving.render(waterMarkTxt);
   }
